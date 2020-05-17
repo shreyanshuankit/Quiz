@@ -35,11 +35,13 @@ body {
                 display: flex;
                 flex-direction: row;
                 top:0px;
+                margin-right: 40vw;
 }
 
 .pagelayer{
+  
             left: 0;
-            margin: 20px;
+            margin: 0;
             display: flex;
             flex-direction: column;
 
@@ -372,7 +374,7 @@ body {
     </div>
     <div class="subbutton"id="nextbtn" onclick="next()">
       Next
-      </div>
+    </div>
   </div>
 <div class="container">
 <h1 id="qusnholder">Welcome to Python Quiz</h1>
@@ -471,6 +473,9 @@ var firstrow = document.getElementById('firstrow');
 var sub = document.getElementById('sub');
 var submitQuiz = true;
 
+
+
+
 btrow1.style.visibility = 'hidden';
 btrow2.style.visibility = 'hidden';
 firstrow.style.visibility = 'hidden';
@@ -526,6 +531,7 @@ sub.style.visibility="hidden";
 
 
         function start() {
+          
           submitQuiz = false;
           count = -1;
           starting.style.display = "none";
@@ -557,6 +563,45 @@ sub.style.visibility="hidden";
 
 function next() {
 
+  if (useranslist[0] != ""){
+one.style.background = "#8eff61"
+}
+if (useranslist[1] != ""){
+two.style.background = "#8eff61"
+}
+
+if (useranslist[2] != ""){
+three.style.background = "#8eff61"
+}
+
+if (useranslist[3] != ""){
+four.style.background = "#8eff61"
+}
+
+if (useranslist[4] != ""){
+five.style.background = "#8eff61"
+}
+
+if (useranslist[5] != ""){
+six.style.background = "#8eff61"
+}
+
+if (useranslist[6] != ""){
+seven.style.background = "#8eff61"
+}
+
+if (useranslist[7] != ""){
+eight.style.background = "#8eff61"
+}
+
+if (useranslist[8] != ""){
+nine.style.background = "#8eff61"
+}
+
+if (useranslist[9] != ""){
+ten.style.background = "#8eff61"
+}
+
 
             box1.style.background = "#dde1e7";
             box2.style.background = "#dde1e7";
@@ -567,7 +612,7 @@ function next() {
     console.log(ans)
     console.log(count)
     if (useranslist[count] != ""){
-      
+
 
 if (useranslist[count] == "0"){
   box1.style.background = "#61dfff";
